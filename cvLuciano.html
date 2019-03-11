@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="Luciano Pataro" />
+    <meta name="date" content="2019-03-12" />
+    <title>Luciano´s resume</title>
+
+        <link href="cvLuciano_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="cvLuciano_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+    <link href="cvLuciano_files/paged-0.2/css/resume.css" rel="stylesheet" />
+    <script src="cvLuciano_files/paged-0.2/js/config.js"></script>
+    <script src="cvLuciano_files/paged-0.2/js/paged.js"></script>
+    <script src="cvLuciano_files/paged-0.2/js/hooks.js"></script>
+    
+    
+  </head>
+  <body>
+
+<div id="aside" class="section level1">
+<h1>Aside</h1>
+<div id="contact" class="section level2">
+<h2>Contact Info</h2>
+<ul>
+<li><p><i class="fa fa-envelope"></i> <a href="mailto:luciano.pataro@treligen.com" class="email">luciano.pataro@treligen.com</a></p></li>
+<li><p><i class="fa fa-github"></i> github.com/</p></li>
+<li><p>For more information, please contact me via email.</p></li>
+</ul>
+</div>
+<div id="skills" class="section level2">
+<h2>Statistical modelling skills</h2>
+<p>I’m a very passionate about what I do. I love to unveil hidden patterns that data can bring, specially using Machine Learning and Data Visualization approaches. I’m open to new experiences and to learn new techniques. I’ve been working in clasifiction High technical skills in R (e.g, tidyverse, sparklyr, MASS, ts, rmarkdown,…), git and SAS.
+I have a lot of knowledge in R, Python, D3, SQL and SAS.</p>
+</div>
+</div>
+<div id="main" class="section level1">
+<h1>Main</h1>
+<div id="title" class="section level2">
+<h2>Luciano Pataro</h2>
+</div>
+<div id="professional-experience" class="section level2">
+<h2>PROFESSIONAL EXPERIENCE</h2>
+<div id="data-scientist" class="section level3">
+<h3>Data Scientist:</h3>
+<p>Innova-tsn</p>
+<p>Madrid</p>
+<p>Sept2017-Currently</p>
+<p>Machine Learning algorithms (gradient boosting, random forest, clusterering): Development of supervised classification for both costumer default and churn prediction using different machine learning algorithms for a Spanish Bank.
+Time series models:
+Audience prediction for each 15 minutes for a Spanish TV Channel.
+Prediction of Air Quality in Beijing and London for every 2 days ahead (KDD Cup).
+Text mining
+Development of R packages for data treatment and modeling.</p>
+</div>
+</div>
+<div id="research-experience" class="section level2" data-icon="laptop">
+<h2>Research Experience</h2>
+<div id="autonomous-university-of-spain" class="section level3">
+<h3>Autonomous University of Spain</h3>
+<p>PhD Ecology: Phylogenetic structure and diversity of European Ferns
+- Phylogenetic analysis (ape, phytools, caper, picante, betapart R packages)
+- Phylogenetic regionalization using clustering (betapart R packages)
+- GAP and hotspot analysis for conservation of Iberian ferns</p>
+<p>Madrid</p>
+<p>2013 - 2019</p>
+</div>
+</div>
+<div id="education" class="section level2" data-icon="graduation-cap">
+<h2>Education</h2>
+<div id="state-university-of-feira-de-santana" class="section level3">
+<h3>State University of Feira de Santana</h3>
+<p>MSc in Botany</p>
+<p>Brazil</p>
+<p>2010 - 2012</p>
+</div>
+<div id="catholic-university-of-salvador" class="section level3">
+<h3>Catholic University of Salvador</h3>
+<p>BS Biology</p>
+<p>Brazil</p>
+<p>2005-2009</p>
+</div>
+<div id="purdue-university" class="section level3">
+<h3>Purdue University</h3>
+<p>Dr. Songlin Fei’s lab - Department of Natural Resources</p>
+<p>USA</p>
+<p>Feb2017-May2017</p>
+</div>
+<div id="national-museum-of-natural-history-cuatrecasas-fellowship-award" class="section level3">
+<h3>National Museum of Natural History, Cuatrecasas Fellowship Award</h3>
+<p>Smithsonian Institution</p>
+<p>USA</p>
+<p>Sept2011-Nov2011</p>
+</div>
+</div>
+</div>
+
+<script>
+(function() {
+  var i, s, j, el, els;
+  var create_el = function(type, className, content, isHTML) {
+    var el = document.createElement(type);
+    if (className) el.className = className;
+    if (content) {
+      if (isHTML) {el.innerHTML = content;} else {el.innerText = content;}
+    }
+    return el;
+  }
+
+  // replace h2 title with h1
+  var title = document.getElementById('title').querySelector('h2');
+  title.parentNode.replaceChild(create_el('h1', false, title.innerHTML, true), title);
+
+  // add the class .aside to #aside
+  el = document.getElementById('aside');
+  if (el) el.className += ' aside';
+
+  // tweak class names of sections, and add icons
+  els = document.getElementById('main').querySelectorAll('.level2');
+  for (i = 0; i < els.length; i++) {
+    el = els[i];
+    if (i === 0 && el.id === 'title') continue;
+    el.className += ' main-block';
+    if (el.dataset['concise']) el.className += ' concise';
+    s = el.dataset['icon'] || 'bookmark';
+    el.firstElementChild.insertBefore(create_el('i', 'fa fa-' + s), el.firstElementChild.firstChild);
+  }
+
+  // tweak class names of blocks in sections
+  els = document.getElementById('main').querySelectorAll('.level3');
+  for (i = 0; i < els.length; i++) {
+    el = els[i];
+    if (el.parentNode.id === 'title') continue;
+    el.className += ' blocks';
+    el.innerHTML = '<div class="date"></div>' + '<div class="decorator"></div>' +
+      '<div class="details"><header></header><div></div></div>' + el.innerHTML;
+    var ps = el.querySelectorAll('p');
+    // move the date paragraph to the date div
+    if (ps.length >= 3) {
+      s = ps[2].innerText;
+      s = s === 'N/A' ? [] : s.split(' - ');
+      el.removeChild(ps[2]);
+      for (j = 0; j < s.length && j < 2; j++) {
+        el.children[0].appendChild(create_el('span', false, s[j]))
+      }
+    }
+    // move title, description, location to the details div
+    (function(h) {
+      h.appendChild(el.children[3]);
+      var p = el.children[3];  // description
+      if (p.innerText !== 'N/A') {
+        h.appendChild(create_el('span', 'place', p.innerHTML, true));
+      }
+      el.removeChild(p);
+      p = el.children[3];  // location
+      if (p.innerText !== 'N/A') {
+        s = create_el('span', 'location', p.innerHTML, true);
+        s.innerHTML = '<i class="fa fa-map-marker-alt"></i> ' + s.innerHTML;
+        h.appendChild(s);
+      }
+      el.removeChild(p);
+    })(el.children[2].firstElementChild);
+    // move the rest of content in a block into the last div of the details div
+    s = el.children[2];
+    while (j = s.nextSibling) {
+      if (j.className === 'aside') { s = j; continue; }
+      el.children[2].lastElementChild.append(j);
+    }
+  }
+})();
+</script>
+
+
+  </body>
+</html>

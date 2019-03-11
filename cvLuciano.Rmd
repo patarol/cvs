@@ -1,0 +1,122 @@
+---
+title: "Luciano´s resume"
+author: "Luciano Pataro"
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    self_contained: no
+  html_document:
+    df_print: paged
+---
+
+Aside
+================================================================================
+
+  
+  
+Contact Info {#contact}
+--------------------------------------------------------------------------------
+  
+- <i class="fa fa-envelope"></i> luciano.pataro@treligen.com
+
+- <i class="fa fa-github"></i> github.com/
+
+- For more information, please contact me via email.
+
+
+Statistical modelling skills {#skills}
+------------------------------------
+  
+I’m a very passionate about what I do. I love to unveil hidden patterns that data can bring, specially using Machine Learning and Data Visualization approaches. I’m open to new experiences and to learn new techniques. I’ve been working in clasifiction High technical skills in R (e.g, tidyverse, sparklyr, MASS, ts, rmarkdown,...), git and SAS.
+I have a lot of knowledge in R, Python, D3, SQL and SAS.
+
+
+
+
+Main
+====================================
+  
+Luciano Pataro {#title}
+------------------------------------
+      
+      
+      
+      
+PROFESSIONAL EXPERIENCE 
+------------------------------------
+      
+### Data Scientist:
+
+Innova-tsn
+
+Madrid
+
+Sept2017-Currently
+
+Machine Learning algorithms (gradient boosting, random forest, clusterering): Development of supervised classification for both costumer default and churn prediction using different machine learning algorithms for a Spanish Bank.
+Time series models:
+Audience prediction for each 15 minutes for a Spanish TV Channel.
+Prediction of Air Quality in Beijing and London for every 2 days ahead (KDD Cup).
+Text mining
+Development of R packages for data treatment and modeling.
+
+
+
+
+Research Experience {data-icon=laptop}
+------------------------------------
+
+### Autonomous University of Spain
+
+PhD Ecology: Phylogenetic structure and diversity of European Ferns
+- Phylogenetic analysis (ape, phytools, caper, picante, betapart R packages)
+- Phylogenetic regionalization using clustering (betapart R packages)
+- GAP and hotspot analysis for conservation of Iberian ferns     
+
+Madrid
+
+2013 - 2019
+
+
+Education {data-icon=graduation-cap}
+------------------------------------
+
+### State University of Feira de Santana 
+
+MSc in Botany    
+
+Brazil
+
+2010 - 2012
+
+
+### Catholic University of Salvador 
+
+BS Biology    
+
+Brazil
+
+2005-2009
+
+
+### Purdue University    
+
+Dr. Songlin Fei’s lab - Department of Natural Resources 
+
+USA
+
+Feb2017-May2017
+
+
+### National Museum of Natural History, Cuatrecasas Fellowship Award 
+
+Smithsonian Institution    
+
+USA
+
+Sept2011-Nov2011
+    
+    
+    
+    
+    
